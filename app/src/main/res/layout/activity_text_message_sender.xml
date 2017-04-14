@@ -9,7 +9,7 @@
 
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:weightSum="1">
@@ -17,16 +17,17 @@
         <LinearLayout
             android:id="@+id/viewA"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
             android:background="@color/colorPrimaryDark"
-            android:orientation="horizontal"
-            android:layout_weight="0.14"
+            android:orientation="vertical"
             android:weightSum="1">
 
             <EditText
                 android:id="@+id/customText"
                 android:layout_width="match_parent"
-                android:layout_height="48dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
                 android:background="@color/colorPrimaryDark"
                 android:hint="@string/text"
                 android:textColor="@color/textColor"
@@ -36,42 +37,57 @@
 
         <LinearLayout
             android:id="@+id/viewB"
-            android:layout_width="382dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:weightSum="1">
 
             <TextView
-                android:id="@+id/textView2"
+                android:id="@+id/buy_list"
                 android:layout_width="match_parent"
-                android:layout_height="30dp"
-                android:text="Buy List"
+                android:layout_height="wrap_content"
+                android:text="@string/buy_list"
                 android:textAlignment="center"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="4.51"
-                android:orientation="horizontal"
-                android:weightSum="1">
+        </LinearLayout>
 
-                <Button
-                    android:id="@+id/button4"
-                    android:layout_width="190dp"
-                    android:layout_height="wrap_content"
-                    android:onClick="onSend"
-                    android:text="@string/buy_milk" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
 
-                <Button
-                    android:id="@+id/button3"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:onClick="onSend"
-                    android:text="@string/buy_bread" />
-            </LinearLayout>
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
 
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:onClick="onSend"
+                android:text="@string/buy_bread" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:onClick="onSend"
+                android:text="@string/buy_milk" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
         </LinearLayout>
 
     </LinearLayout>
