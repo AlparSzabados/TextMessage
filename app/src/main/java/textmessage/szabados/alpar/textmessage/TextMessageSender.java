@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-public class EmergencyText extends AppCompatActivity {
+public class TextMessageSender extends AppCompatActivity {
     public static final SmsManager SMS_MANAGER = SmsManager.getDefault();
     public static final String DESTINATION_ADDRESS = "";
 
@@ -16,7 +16,7 @@ public class EmergencyText extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_emergency_text);
+        setContentView(R.layout.activity_text_message_sender);
 
         customText = (EditText) findViewById(R.id.customText);
     }
