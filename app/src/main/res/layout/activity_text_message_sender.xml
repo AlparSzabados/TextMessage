@@ -64,11 +64,11 @@
                 android:layout_weight="1" />
 
             <Button
-                android:id="@+id/button3"
+                android:id="@+id/button1"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="3"
-                android:onClick="onSend"
+                android:onClick="onClick"
                 android:text="@string/buy_bread" />
 
             <Space
@@ -77,11 +77,11 @@
                 android:layout_weight="1" />
 
             <Button
-                android:id="@+id/button4"
+                android:id="@+id/button2"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="3"
-                android:onClick="onSend"
+                android:onClick="onClick"
                 android:text="@string/buy_milk" />
 
             <Space
@@ -98,7 +98,7 @@
         android:layout_height="50dp"
         android:layout_weight="0.05"
         android:clickable="true"
-        android:onClick="onSend"
+        android:onClick="onClick"
         app:fabSize="mini"
         app:layout_anchor="@id/viewA"
         app:layout_anchorGravity="bottom|right|end"
