@@ -4,4 +4,6 @@
     <string name="buy_milk">Buy Milk</string>
     <string name="buy_bread">Buy Bread</string>
     <string name="buy_list">Buy List</string>
+    <string name="browse">Browse Phone Number</string>
+    <string name="phone_number">Phone Number</string>
 </resources>
