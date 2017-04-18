@@ -18,20 +18,42 @@
             android:id="@+id/viewA"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="0.1"
             android:background="@color/colorPrimaryDark"
             android:orientation="vertical"
             android:weightSum="1">
 
             <EditText
+                android:id="@+id/phone_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/phone_number"
+                android:inputType="phone"
+                android:textColorHint="@color/textColor"
+                android:textColor="@color/textColor">
+
+            </EditText>
+
+            <Button
+                android:id="@+id/phone_number_picker"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="0dp"
+                android:onClick="doLaunchContactPicker"
+                android:text="@string/browse">
+
+            </Button>
+
+            <EditText
                 android:id="@+id/customText"
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1"
-                android:background="@color/colorPrimaryDark"
+                android:layout_height="wrap_content"
                 android:hint="@string/text"
+                android:inputType="text"
                 android:textColor="@color/textColor"
-                android:textColorHint="@color/textColor" />
+                android:textColorHint="@color/textColor">
+
+            </EditText>
 
         </LinearLayout>
 
